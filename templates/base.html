@@ -1,1 +1,19 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}Revisi BM Tahun 2{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <nav>
+    <a href="{{ url_for('home') }}">Utama</a>
+    <a href="{{ url_for('imlak') }}">Imlak</a>
+    <!-- Add other topic links -->
+  </nav>
+  
+  {% block content %}{% endblock %}
 
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
