@@ -1,1 +1,14 @@
+{% extends "base.html" %}
 
+{% block content %}
+<section class="exercise">
+  <h2>Imlak</h2>
+  <div class="quiz">
+    <p>Tulis ayat ini dengan betul:</p>
+    <p class="prompt">"Saya suka membaca buku."</p>
+    <textarea id="answer"></textarea>
+    <button onclick="checkAnswer()">Semak</button>
+    <p id="feedback" hidden>Jawapan betul!</p>
+  </div>
+</section>
+{% endblock %}
